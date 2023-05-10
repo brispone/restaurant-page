@@ -1,0 +1,15 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Restaurant page project for the Odin Project.  Page is rendered dynamically and also was a chance to use and practice with Webpack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bradley Rispone",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1"
+  }
+}
