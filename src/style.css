@@ -1,0 +1,32 @@
+body {
+    background-image: url(./background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.info-box {
+    color: white;
+    border: 5px solid white;
+    margin: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#hero {
+    font-size: 5em;
+}
+
+#hours, #location {
+    font-size: 1.8em;
+    width: 700px;
+}
+
+ul {
+    list-style-type: none;
+}
