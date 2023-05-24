@@ -10,6 +10,30 @@ html, body {
     padding: 0;
 }
 
+#navbar {
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    border-bottom: 5px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-btn {
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    color: #FFC72C;
+    transition: 0.3s;
+}
+
 .info-box {
     color: white;
     border: 5px solid white;

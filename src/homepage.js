@@ -29,7 +29,11 @@ const loadMainPage = () => {
     bottomContainer.appendChild(hours);
     bottomContainer.appendChild(location);
 
-    document.getElementById("content").appendChild(container);
+    const content = document.getElementById("content");
+    if(content.lastChild) {
+        content.removeChild(content.lastChild);
+    }
+    content.appendChild(container);
 };
 
 export { loadMainPage };
