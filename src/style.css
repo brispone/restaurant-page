@@ -9,13 +9,13 @@ body {
     background-position: center;
 }
 html, body {
-    min-height: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
 #content {
-    min-height: 100vh;
+    height: 100%;
 }
 
 #navbar {
@@ -43,7 +43,7 @@ html, body {
 
 .nav-btn.active {
     color: #FFC72C;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .info-box {
@@ -77,20 +77,24 @@ ul {
 #container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    max-height: calc(100vh - 38px);
 }
 
-#menu-container {
+#menu-container, #contact-container {
     display: flex;
-    height: 100%;
     justify-content: center;
     align-content: center;
 }
 
-#top-container, #bottom-container {
+#top-container {
     display: flex;
     flex: 1;
     /*border: 1px solid red;*/
+}
+
+#bottom-container {
+    display: flex;
+    flex: 2;
 }
 
 #top-container {
@@ -103,6 +107,6 @@ ul {
     align-items: flex-end;
 }
 
-#menu-box {
+#menu-box, #contact-box {
     width: 700px;
 }
