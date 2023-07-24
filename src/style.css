@@ -8,6 +8,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 html, body {
     height: 100%;
     margin: 0;
@@ -39,11 +40,13 @@ html, body {
 .nav-btn:hover {
     color: #FFC72C;
     transition: 0.3s;
+    transform: scale(1.1);
 }
 
 .nav-btn.active {
     color: #FFC72C;
-    transform: scale(1.2);
+    transform: scale(1.1);
+    text-decoration: underline;
 }
 
 .info-box {
@@ -52,7 +55,7 @@ html, body {
     margin: 10px;
     padding: 30px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,7 +80,6 @@ ul {
 #container {
     display: flex;
     flex-direction: column;
-    max-height: calc(100vh - 38px);
 }
 
 #menu-container, #contact-container {
@@ -109,4 +111,31 @@ ul {
 
 #menu-box, #contact-box {
     width: 700px;
+}
+
+#menu {
+    color: #fff;
+}
+  
+
+#menu h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #FFC72C;
+    padding-bottom: 0.5rem;
+}
+  
+
+#menu ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+  
+#menu li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+  
+#menu li::before {
+    content: "•";
+    margin-right: 8px;
 }
