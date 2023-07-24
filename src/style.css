@@ -14,6 +14,10 @@ html, body {
     padding: 0;
 }
 
+#content {
+    min-height: 100vh;
+}
+
 #navbar {
     color: white;
     font-size: 1.8em;
@@ -35,6 +39,11 @@ html, body {
 .nav-btn:hover {
     color: #FFC72C;
     transition: 0.3s;
+}
+
+.nav-btn.active {
+    color: #FFC72C;
+    transform: scale(1.1);
 }
 
 .info-box {
@@ -81,7 +90,7 @@ ul {
 #top-container, #bottom-container {
     display: flex;
     flex: 1;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 #top-container {

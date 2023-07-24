@@ -8,6 +8,7 @@ const loadNav = () => {
 
     const aboutButton = document.createElement('div');
     aboutButton.classList.add("nav-btn");
+    aboutButton.classList.add("active");
     aboutButton.innerText = "ABOUT";
 
     const menuButton = document.createElement('div');
@@ -24,17 +25,31 @@ const loadNav = () => {
 
     aboutButton.addEventListener("click", ()=> {
         loadMainPage();
+        setActiveNavItem(aboutButton);
     });
 
     menuButton.addEventListener("click", ()=> {
         loadMenu();
+        setActiveNavItem(menuButton);
     });
 
     contactButton.addEventListener("click", ()=> {
         loadContact();
+        setActiveNavItem(contactButton);
     });
 
     document.body.insertBefore(navbar, document.getElementById("content"));
+};
+
+const setActiveNavItem = (activeButton) => {
+    const navButtons = document.querySelectorAll(".nav-btn");
+    navButtons.forEach((button) => {
+        if (button === activeButton) {
+            button.classList.add("active");
+        } else {
+            button.classList.remove("active");
+        }
+    });
 };
 
 export { loadNav };
