@@ -11,7 +11,14 @@ const loadMainPage = () => {
     const hero = document.createElement('div');
     hero.id = "hero";
     hero.classList.add("info-box");
-    hero.innerText = "This is a restaurant. We have food. Come eat it.";
+
+    const heroHeader = document.createElement('h1');
+    heroHeader.innerText = "This is a restaurant. We have food. Come eat it.";
+    hero.appendChild(heroHeader);
+
+    const aboutBlurb = document.createElement('p');
+    aboutBlurb.innerText = "We are passionate about providing you with a delightful dining experience that tantalizes your taste buds. Our team of talented chefs crafts mouthwatering dishes using only the freshest and finest ingredients sourced from local suppliers.";
+    hero.appendChild(aboutBlurb);
 
     const hours = document.createElement('div');
     hours.id = "hours";
